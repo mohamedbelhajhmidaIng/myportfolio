@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/quizz.css">
+</head>
+
+<body>
+    <div class="home-box custom-box hide">
+        <h3>Insctruction</h3>
+        <p>Nombre totale de questions : <span class="total-question">5</span></p>
+        <button type="button" class="btn">Commencer le Quiz</button>
+    </div>
+
+    <div class="quiz-box custom-box">
+        <div class="question-number">
+        </div>
+        <div class="question-text">
+        </div>
+        <div class="option-container">
+           
+
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="suivant()">Suivant</button>
+        </div>
+        <div class="answers-indicator">
+          
+        </div>
+    </div>
+
+    <div class="result-box custom-box hide ">
+
+        <h1>Résultat de quizz</h1>
+        <table>
+            <tr>
+                <td>Total questions</td>
+                <td><span class="total-question">5</span></td>
+            </tr>
+
+            <tr>
+                <td>Attempt</td>
+                <td><span class="total-attempt">4</span></td>
+            </tr>
+
+            <tr>
+                <td>correct</td>
+                <td><span class="total-correct">3</span></td>
+            </tr>
+
+            <tr>
+                <td>wrong</td>
+                <td><span class="total-wrong">1</span></td>
+            </tr>
+
+            <tr>
+                <td>pourcentage</td>
+                <td><span class="pourcentage">60.00%</span></td>
+            </tr>
+
+            <tr>
+                <td>Total score</td>
+                <td><span class="total-score">3 / 5</span></td>
+            </tr>
+
+
+        </table>
+        <button type="button" class="btn">Recommencer</button>
+        <button type="button" class="btn">Précedent</button>
+    </div>
+</body>
+<script src="../js/quizz.js"></script>
+
+</html>
